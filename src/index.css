@@ -483,3 +483,9 @@ float: right;
 {
   border: 1px solid green;
 }
+
+.margin-class h2 
+{
+  width: 200px;
+    background: aliceblue;
+}

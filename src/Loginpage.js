@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import { useNavigate } from "react-router-dom";
-import "./login.css";
+import './login.css';
+import "./index.css";
 import WebcamCapture from './webcamcapture';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import  GoogleSocialAuth from './googlelogin';
 
 
 
@@ -87,6 +88,7 @@ else
      <input type="password" name="password" onChange={(e)=>this.handlechange(e)} placeholder="password"/>
      <button type="submit">login</button>
    </form>
+   <GoogleSocialAuth/>
  </div>
 </div>
 <ToastContainer />
