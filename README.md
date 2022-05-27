@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# Find Missing People
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img height="400px"src="public/images/home.png" />
+</p>
+<hr />
 
-## Available Scripts
+Find Missing People is an web application where you can file complain for missing people as well as if you found someone in strey condtions or someone
+got lost form their loved ones and this application uses face recognization to match profile of Missing people and Found people such that if 
+you file a missing complain of someone and someother people may be after sometime found him and file complain of found so this application notify both 
+user that they got a match.
 
-In the project directory, you can run:
+> #### List of Features it currently Supports includes : 
 
-### `npm start`
+* Matching Missing Person Profile To Found Person Profile via Face Recognization Azure Api 
+* Email Notificaton when got A match 
+*  Async Task Sechdulding via Celery on Backend Server For Better Performance and Less Waiting Time
+*  Fuzzy Search For Searching in List of Profiles for Better Filtering 
+* 👤 User Authenticaion 
+* Authentication also Supports Google Login
+* 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> ## Documentation
+- [Presentation](https://docs.google.com/presentation/d/1z6csQ5YHbrYu9RsSbmHp7JdDms3Ntkd4fReq6RBJtD0/edit?usp=sharing)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> ## Table of Content 
 
-### `npm test`
+* [Deployment](#deployment)
+* [Tools and Technologies Used](#tools-and-technologies-used)
+* [Usage](#usage)
+* [Local Setup](#local-setup)
+* [Improvements](#improvements)
+* [License](#license)
+* [Screenshots](#screenshots)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> ## Deployment 
 
-### `npm run build`
+[![Website https://readymeet.herokuapp.com](https://img.shields.io/website-up-down-green-red/https/naereen.github.io.svg)](https://readymeet.herokuapp.com)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Deployed Website (on Heroku): https://readymeet.herokuapp.com/
+* Frontend Server is deployed to Netlify
+* Backend Server is Deployed to Heroku 
+* PostGres Databse on Heroku
+* Celery On Heroku
+* Media Files On cloudinary (https://cloudinary.com/)
+* To Run Project only need to Run Frontend () Backend Is already attched to it
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> ## Tools and Technologies Used
+* React, Bootstrap For Frontend Server
+* Django Rest FrameWork For Backend Server
+* Celery For Running Async Tasks On backend Server 
+* Azure Face Detection Api for Facedetection 
+* Azure Face Verifiaction Api for Face verification
+* Mapbox For embedding Maps
+* gecoding and reverse geocoding for Api's for fecthing Location from cordinates
+* Auto Suggest Mapbox Api for Loaction Seacrh Bar
+* Smtp For Email Notifiaction From Backend Server(Django Rest Framework)
+* OAUT 2.0 For Google Login
+* Fuse.js For Fuzzy Search
+* React Toast for alearts
+*  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> ## Usage
+* For Using Ready Meet user need to first Signup and Create new Account and Login to the Account. 
+* Start the Meeting or Join New Meeting using Meeting Link, make sure to paste only uuid for join meet option. 
+* Users Enters the Waiting Room for the First Time. Here he's in listen only mode i.e, Chats, Video, Audio, Screen Share options are not visible to other people in meeting. 
+* For Email Invitation type the Email Adress of user, for multiple invitation type emails seperated by commas, and click Send Invitation.
+* The Recoding Video Downloaded is in mkv format is not supported by Windows Media Player. So Make Sure to open it using **[VLC Media Player](https://www.videolan.org/)**. 
+* User Can Turn on/off his Video/Audio. Also, the user window can be zoomed for better visiblity. 
+* Take down Notes and download it as a PDF for future reference of the Meeting.
+* Chat with Other during the Meeting. 
 
-### `npm run eject`
+> ## Local Setup
+Pre-Requisites: You must have Nodejs installed locally on your system
+* Clone the Repository `git clone https://github.com/pranshukas/Ready-Meet.git` or directly download the zip file.
+* ` cd Ready-Meet/`
+* Intall the Dependencies `npm install`
+* _Optional_ Install Nodemon `npm install -g nodemon`
+* Starting the App `npm start` or `node server.js`
+* Open `http://localhost:3000/` to view the App
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> ## Improvements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* The Project has various rooms for improvements from scaling Application to adding new Features like Users are able to chat before as well after Meetings, able to create teams and add Participants, share resources. 
+* __Biggest Issue that I found was send email invitation from Client Side has Token ID visible to world which is prone to Vulnerabilities, issue can be solved by using server side email invitation sending.__
+* Currently the Website is not Scaled due to which there is latency in loading and API Calls. During meeting if any user leaves the meeting, his meeting Window closes after few sec due to latency in API calls. 
+* Also, the User is able to record only his video not entire meeting. In future User can record the entire meeting. 
+* Also, the User Count is having some bugs, it decreases to -1 on page refresh or shows wrong output when multiple users enters/leaves meeting which needs to be fixed. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+😃 Suggestions and Contibutions are Welcomed! Feel free to Reach out to me! **[Pranshu Kashyap](https://github.com/pranshukas)**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> ## License
+MIT License
 
-## Learn More
+Copyright (c) 2021 Pranshu Kashyap
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Code Splitting
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> ## Screenshots 
+![Home Page](public/images/landing-page.png)
+![Meeting](public/images/meeting.png)
+![Sucessfull Email](public/images/email-invite.png)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
