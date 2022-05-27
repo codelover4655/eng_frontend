@@ -99,13 +99,18 @@ else
     });
         return(
               <>
-              <div className="margin-class">
-            <h2 className="missinglisth2">LIST OF Reported Found People </h2>
+                        <div className="searchbar">
+           <h3>SEARCH BY PERSONS NAME/ PARENTS NAME/ AGE</h3>
             <input
           type="search"
           onChange={(e) => this.searchItem(e.target.value)}
-          placeholder="Search By Name or   FatherName   or   MotherName  or  Age "
+          placeholder="Search Here.."
         />
+        </div>
+        <h2 className="missinglisth2">LIST OF Reported Found People </h2>
+
+              <div className="margin-class">
+           
             <div className="missinglist">
                 {List}
             </div>

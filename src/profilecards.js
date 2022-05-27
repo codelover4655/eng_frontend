@@ -36,10 +36,10 @@ class Profilecard extends React.Component  {
   <h3>{this.props.obj.name}</h3>
 <p>Age : {this.props.obj.age}</p>
 <p> Contact: {this.props.obj.contact_no}</p>
-  <div style={{margin: "5px 0"}}>
+
   <button onClick={()=>this.fulldetails()}>Full Details</button>
-  
-  </div>
+
+ 
 </div>
 </>
         );

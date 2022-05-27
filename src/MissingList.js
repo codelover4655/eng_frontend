@@ -26,6 +26,8 @@ class MissingPersonList extends React.Component {
             isdataup:'no',
             data:[],
             forsearch:'no',
+            query:'',
+            data1:[],
         };
 
     }
@@ -57,7 +59,7 @@ else
        var ar=[];
         ar[0]=data;
         var yoyo=Array.isArray(data)===false?ar:data
-        this.setState({data: yoyo, isdataup:'yes'});
+        this.setState({data: yoyo, isdataup:'yes',data1:yoyo});
 
      });
 
@@ -68,7 +70,8 @@ else
     }
     searchItem(query)
     {
-        if (query!=null) {
+     
+        if (query!='') {
              
          
             var data1=this.state.data;
@@ -86,12 +89,16 @@ else
             
           }
           else 
-          {console.log("hogya");
-
-              var data1=this.state.data;
-              this.setState({data:data1});
+          {
+              console.log("hogya");
+              var data1=this.state.data1;
+              this.setState({data:data1,forsearch:'yes'});
           }
 
+    }
+    search(val)
+    {
+       this.setState({query:val});
     }
     render() {
         if(this.state.isdataup=='no')
@@ -112,21 +119,26 @@ else
     });
     
         return(
+
             <>
-            <div className="margin-class">
-            <h2 className="missinglisth2">LIST OF MISSING PERSONS </h2>
-           
-            <input
-          type="search"
-          onChange={(e) => this.searchItem(e.target.value)}
-          placeholder="Search By Name or   FatherName   or   MotherName  or  Age "
-        />
-    
-            <div className="missinglist">
-                {List}
-            </div>
-            </div>
-            </>
+            <div className="searchbar">
+<h3>SEARCH BY PERSONS NAME/ PARENTS NAME/ AGE</h3>
+<input
+type="search"
+onChange={(e) => this.searchItem(e.target.value)}
+placeholder="Search Here.."
+/>
+
+</div>
+<h2 className="missinglisth2">LIST OF Reported Missing People </h2>
+
+  <div className="margin-class">
+
+<div className="missinglist">
+    {List}
+</div>
+</div>
+</>
         );
         
     }

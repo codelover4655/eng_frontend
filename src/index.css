@@ -311,19 +311,19 @@ float: right;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    width: 300px;
     text-align: center;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     background: white;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
-    cursor: pointer;
+
     margin: 50px;
     
     
   }
-  .card   :hover
+  .card:hover
   {
     transform: scale(1.1);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -373,11 +373,11 @@ float: right;
     background: white;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
-    cursor: pointer;
+
   }
   .missinglist
   {
-    display: flex;
+    display: -webkit-inline-box;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -413,7 +413,7 @@ float: right;
 }
 .card3
 {
-  background-image: url("https://images.unsplash.com/photo-1526943604017-955071a1fb3e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YnJpZ2h0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500");
+  background-image: url("https://www.wallcavityclaims.co.uk/wp-content/uploads/2014/10/close-up-land-asphalt-sun-rays-bokeh-blur-background-wallpaper-widescreen-full-screen-widescreen-hd-wallpapers-background-wallpaper.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -423,6 +423,7 @@ float: right;
   display: flex;
   justify-content: center;
   align-items: center;
+
 
 }
 .card3-card
@@ -437,13 +438,14 @@ float: right;
     border-radius: 20px;
     color: #fff;
  margin-top:50px;
+ padding: 20px;
 }
 .card3-card h3
 {
   
   text-transform: uppercase;
 
-  color:aqua;
+  color:white;
   background-color: transparent;
 
 }
@@ -469,7 +471,7 @@ float: right;
 .margin-class input
 {
   margin-top:30px;
-  width:600px;
+   
   height:40px;
   float: right;
   font-size:20px;
@@ -498,7 +500,7 @@ float: right;
 }
 
 .card23 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
   max-width: 300px;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -506,13 +508,15 @@ float: right;
   background: white;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
-  cursor: pointer;
+
   margin: 50px;
   display: grid;
+  border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) 0 6px 6px rgba(0, 0, 0, 0.1);
   
   
 }
-.card23   :hover
+.card23:hover
 {
   transform: scale(1.1);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -530,4 +534,67 @@ float: right;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+}
+.faq
+{
+  padding:40px 100px;
+}
+.searchbar
+{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    float: right;
+    border: 3px solid white;
+border-radius: 10px;
+    padding: 10px;
+    background: black;
+    opacity: 0.9;
+    color: white;
+   justify-content:center;
+   
+}
+
+.card34 {
+
+  max-width: 300px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: white;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+
+  margin: 50px;
+ 
+  border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) 0 6px 6px rgba(0, 0, 0, 0.1);
+  
+  
+}
+.card34:hover
+{
+  transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border:1px solid black;
+}
+.card34 button
+{
+  border: none;
+  outline: 0;
+
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin:5px;
+}
+.partice-js
+{
+  height:300px;
+  width:100%;
+  padding:20px;
 }

@@ -105,16 +105,17 @@ else
     render(){
         return (
 <>
-            <div class="card">
+            <div class="card34">
   <img src={this.props.obj.photo} alt="John" style={{ width:"100%",height:"250px"}} />
   <h3>{this.props.obj.name}</h3>
 <p>Age : {this.props.obj.age}</p>
 <p> Contact: {this.props.obj.contact_no}</p>
-  <div style={{margin: "5px 0"}}>
+
   <button onClick={()=>this.fulldetails(this.props.type)}>Check status</button>
+  
   <button onClick={()=>this.delete(this.props.obj.id,this.props.type)}>Delete Complain</button>
   
-  </div>
+
 </div>
 <ToastContainer/>
 </>

@@ -182,7 +182,8 @@ else
          console.log('yoyo');
          const token = localStorage.getItem("token");
          toast("Please wait For a while we are evaluating your Application");
-    e.preventDefault();
+         toast("Dont refresh you will be migrated automatically");
+         e.preventDefault();
          let form_data = new FormData();
          form_data.append('photo', this.state.photo,this.state.photo.name);
          form_data.append('name', this.state.name);
@@ -211,9 +212,9 @@ else
       
          if(!response.ok)
          {
-             if(response.status==400)
+             if(response.status==400||response.status==500)
              {
-               toast("Please Upload Clear picture");
+               toast("Please Upload Clear picture And dont upload corrupted files");
                const yoyo=response.json();
                // yet not response is extrected properly
                yoyo.then((data) => {

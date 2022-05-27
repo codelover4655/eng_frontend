@@ -116,6 +116,7 @@ const Mappopup = (props) => {
     e.preventDefault();
     const token = localStorage.getItem("token");
     toast("Please wait For a while we are evaluating your Application");
+    toast("Dont refresh you will be migrated automatically");
          let form_data = new FormData();
          form_data.append('photo', this.state.photo,this.state.photo.name);
          form_data.append('name', this.state.name);

@@ -50,6 +50,7 @@ mycomplain()
     render() {
         return(
             <>
+        
             <div className="homedisplay">
             <div class="card23">
   <img src="https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/ledgerupdates_impact/photo/2018/08/06/24752076-standard.jpg" alt="John" style={{ width:"100%",height:"250px"}} />
@@ -133,9 +134,10 @@ mycomplain()
   
 </div>
 
+<div className="faq">
 <Faqq/>
-
-            </div>
+</div>
+ </div>
 
 
 
