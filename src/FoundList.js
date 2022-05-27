@@ -17,6 +17,7 @@ class FoundPersonList extends React.Component {
         this.state = {
             isdataup:'no',
             data:[],
+            data1:[],
         };
 
     }
@@ -48,7 +49,7 @@ else
        var ar=[];
         ar[0]=data;
         var yoyo=Array.isArray(data)===false?ar:data
-        this.setState({data: yoyo, isdataup:'yes'});
+        this.setState({data: yoyo, isdataup:'yes',data1:yoyo});
 
      });
 
@@ -59,7 +60,7 @@ else
     }
     searchItem(query)
     {
-        if (query) {
+        if (query!='') {
              
             query = query.toLowerCase();
             var data1=this.state.data;
@@ -75,6 +76,11 @@ else
            this.setState({data: res1,forsearch:'yes'});
            
             
+          }
+          else
+          {
+            var data1=this.state.data1;
+            this.setState({data:data1,forsearch:'yes'});
           }
 
     }
