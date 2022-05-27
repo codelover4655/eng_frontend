@@ -84,12 +84,12 @@ two buttons for every profie first is "CHECK STATUS" button where you can see wh
  * As well as in my complain section they can check status where they can se those matching profiles
  
 > ## Local Setup
-*  For Running this application with full funtionality On your Local Pc You to setup both backend-server(https://github.com/codelover4655/eng_backend)
-*   and frontend-server(https://github.com/codelover4655/eng_frontend)
-Pre-Requisites: You must have Nodejs and Django
-installed locally on your system
-* Clone the Repository `git clone https://github.com/pranshukas/Ready-Meet.git` or directly download the zip file.
-* ` cd Ready-Meet/`
+* For Running this application with full funtionality On your Local Pc You to setup both backend-server(https://github.com/codelover4655/eng_backend)
+   and frontend-server(https://github.com/codelover4655/eng_frontend)
+ *                                         STEPS TO SETUP FRONTEND SERVER
+Pre-Requisites: You must have Nodejs installed locally on your system
+* Clone the Repository `git clone https://github.com/codelover4655/eng_frontend.git` or directly download the zip file.
+* Move to the directry where this cloned file exist(if cloned in C folder directly so run commed in cmd `cd eng_frontend`)
 * Intall the Dependencies `npm install`
 * _Optional_ Install Nodemon `npm install -g nodemon`
 * Starting the App `npm start` or `node server.js`
