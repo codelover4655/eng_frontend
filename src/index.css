@@ -321,6 +321,7 @@ float: right;
     cursor: pointer;
     margin: 50px;
     
+    
   }
   .card   :hover
   {
@@ -488,4 +489,45 @@ float: right;
 {
   width: 200px;
     background: aliceblue;
+}
+.homedisplay
+{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card23 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: white;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin: 50px;
+  display: grid;
+  
+  
+}
+.card23   :hover
+{
+  transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border:1px solid black;
+}
+.card23 button
+{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }

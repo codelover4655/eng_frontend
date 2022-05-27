@@ -340,7 +340,7 @@ else
       <input type="text" required name='father' onChange={(e)=>this.handlechange(e)}  placeholder="FatherName"/>
       <input type="text" required name='mother' onChange={(e)=>this.handlechange(e)}  placeholder="  MotherName"/>
       <label for="phone">Enter a phone number:</label>
-      <input type="tel" id="phone" name="contact_no" onChange={(e)=>this.handlechange(e)}   placeholder="123-45-678"  required/><br/><br/>
+      <input type="tel" id="phone" name="contact_no" onChange={(e)=>this.handlechange(e)}   placeholder="[countrycode(+91)then space then contact_no ]"  required/><br/><br/>
   
       <input type="number" required  name='age' onChange={(e)=>this.handlechange(e)}  placeholder="Age"/>
       <input type="email"  required name='email' onChange={(e)=>this.handlechange(e)}  placeholder="Your Contact Email"/>
