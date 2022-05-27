@@ -167,7 +167,11 @@ mycomplain()
     
            }
 else{
+<<<<<<< HEAD
           return (
+=======
+    return (
+>>>>>>> fa1863d2ab29af6ce40591a4686772c88e466db4
               <>
             <ul className='uldashboard' >
             <li className={this.state.style1} ><button onClick={() => this.home()}>Home</button></li>
@@ -180,8 +184,13 @@ else{
           </ul>
           <ToastContainer />
           </>
+<<<<<<< HEAD
           ); 
 } 
+=======
+          );  
+}
+>>>>>>> fa1863d2ab29af6ce40591a4686772c88e466db4
 
         }
 
