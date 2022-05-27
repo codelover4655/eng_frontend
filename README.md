@@ -70,16 +70,16 @@ Deployed Website (on Heroku): https://readymeet.herokuapp.com/
 * In Missing People List Section You can find every Missing Complain Which is Registered On my Application And Not Yet Taken Back. So Here You See 
  Some Profie Card Which Has a Full detials Button Which when clicked Will Show You The Full Profie Regarding that card. The Found People List section is also designed in the same way.
 * On Missing People List Section and Found People List you also get an Search bar where you can search profile via Name or father Name or Mother Name or Age. This is a Fuzzy Search so No need to be very confident with your spellings  .
-                                         ### Filing Complain(Missing/Found)
+*                                         ### Filing Complain(Missing/Found)
 * When Head To File complain section either Missing or Found You Have to Login in Webapp as a user. Then fill for with the details of whom you are fill This Form
 two thing to keep in mind first is enter your contact number in valid format(first writing country code then give space and write yourrest of the number without country code)  and second thing is Upload clear and face detectable image . in either of the case you will get alert and have to fill complain again.
-                                          ### My Complain Section
+ *                                         ### My Complain Section
 * When head over to mycomplain section(only visible after login) you will see all missing and found complains registerd by you in seprated boxes there you got 
 two buttons for every profie first is "CHECK STATUS" button where you can see what's going with your request means here you see all the matching profiles.
-                                               ##Mathcing Profiles
+ *                                            ##Mathcing Profiles
 * Matching profiles means if you file a Missing Complain and someone else files a Found coplain  or vise-versa and face both both the profils are similer (similarity is judged by Azure Face varifiaction Api) Then these Profies are categorized as matching profies.
 * Another Profile control you get in My Profie Section is to delete Profie.
-                                                     ## What Happens When Got a match
+ *                                                    ## What Happens When Got a match
  * Both The User involved in match got mail from website-email(missingperson4655@gmail.com) There they got link of Profile Of whom They Got Match
  * As well as in my complain section they can check status where they can se those matching profiles
  
