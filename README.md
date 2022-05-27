@@ -84,7 +84,9 @@ two buttons for every profie first is "CHECK STATUS" button where you can see wh
  * As well as in my complain section they can check status where they can se those matching profiles
  
 > ## Local Setup
-Pre-Requisites: You must have Nodejs installed locally on your system
+ *         For Running this application with full funtionality On your Local Pc You to setup both backend-server() and frontend-server()
+Pre-Requisites: You must have Nodejs and Django
+installed locally on your system
 * Clone the Repository `git clone https://github.com/pranshukas/Ready-Meet.git` or directly download the zip file.
 * ` cd Ready-Meet/`
 * Intall the Dependencies `npm install`
