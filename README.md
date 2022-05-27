@@ -91,10 +91,12 @@ Pre-Requisites: You must have Nodejs installed locally on your system
 * Clone the Repository `git clone https://github.com/codelover4655/eng_frontend.git` or directly download the zip file.
 * Move to the directry where this cloned file exist(if cloned in C folder directly so run commed in cmd `cd eng_frontend`)
 * Intall the Dependencies `npm install`
-* _Optional_ Install Nodemon `npm install -g nodemon`
 * Starting the App `npm start` or `node server.js`
 * Open `http://localhost:3000/` to view the App
+* be ensure this port is free for host
 
+*                                                  STEPS TO SETUP BACKEND SERVER
+*                                                  
 > ## Improvements
 
 * The Project has various rooms for improvements from scaling Application to adding new Features like Users are able to chat before as well after Meetings, able to create teams and add Participants, share resources. 
