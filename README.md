@@ -119,7 +119,11 @@ so This is a site of imporvement in my project.
 😃 Suggestions and Contibutions are Welcomed! Feel free to Reach out to me! **[Tushar Singhal](https://github.com/codelover4655)**
 
 > ## Screenshots 
-![Home Page](public/images/landing-page.png)
-![Meeting](public/images/meeting.png)
-![Sucessfull Email](public/images/email-invite.png)
+![Home Page](public/images/home.png)
+![Missing People List](public/images/Missingpeoplelist.png)
+![MY COMPLAINS](public/images/MY Complain.png)
+![Fuzzy Search](public/images/Fuzzy Search.png)
+![EMAIL NOTIFICATION](public/images/Fuzzy Search.png)
+
+
 
