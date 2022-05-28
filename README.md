@@ -23,8 +23,7 @@ user that they got a match.
  
 
 > ## Documentation
-- [Presentation](https://docs.google.com/presentation/d/1z6csQ5YHbrYu9RsSbmHp7JdDms3Ntkd4fReq6RBJtD0/edit?usp=sharing)
-
+- 
 > ## Table of Content 
 
 * [Deployment](#deployment)
