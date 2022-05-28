@@ -54,7 +54,7 @@ Deployed Website (on Heroku): https://readymeet.herokuapp.com/
 * Azure Face Detection Api for Facedetection 
 * Azure Face Verifiaction Api for Face verification
 * Mapbox For embedding Maps
-* gecoding and reverse geocoding for Api's for fecthing Location from cordinates
+* gecoding and reverse geocoding for Api's for fecthing Location from coordinate
 * Auto Suggest Mapbox Api for Loaction Search Bar
 * Smtp For Email Notifiaction From Backend Server(Django Rest Framework)
 * OAUT 2.0 For Google Login
