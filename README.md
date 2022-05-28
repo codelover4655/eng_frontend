@@ -7,23 +7,22 @@
 <h2>Backend-repo(https://github.com/codelover4655/eng_backend)</h2>
 <hr />
 
-Find Missing People is an web application where you can file complain for missing people as well as if you found someone in strey condtions or someone
-got lost form their loved ones and this application uses face recognization to match profile of Missing people and Found people such that if 
-you file a missing complain of someone and someother people may be after sometime found him and file complain of found so this application notify both 
-user that they got a match.
+Find Missing People is a web application that helps simplify the issue of locating missing people, You can file complaints for missing people or if you found someone in stray conditions or if someone got lost from their loved ones. The application uses face recognization to match profiles for the Missing people and Found people and notifies both users whenever there is a match. Example - User A lodged a complaint about a missing person, and another User B founds a person and files a request,
+ then if there is a match found then, both of them would be notified.
 
 > #### List of Features it currently Supports includes : 
 
 * Matching Missing Person Profile To Found Person Profile via Face Recognization Azure Api 
 * Email Notificaton when got a match 
-*  Async Task Sechdulding via Celery on Backend Server For Better Performance and Less Waiting Time
+*  Async Task scheduling via Celery on Backend Server For Better Performance and Less Waiting Time
 *  Fuzzy Search For Searching in List of Profiles for Better Filtering 
 * 👤 User Authenticaion 
 * Authentication also Supports Google Login
  
 
 > ## Documentation
-- 
+- [Presentation]
+
 > ## Table of Content 
 
 * [Deployment](#deployment)
@@ -37,7 +36,7 @@ user that they got a match.
 > ## Deployment 
 
 
-Deployed Website (on Heroku)
+Deployed Website (on Heroku):
 * Frontend Server is Deployed to Netlify
 * Backend Server is Deployed to Heroku 
 * PostGres Database on Heroku
@@ -49,9 +48,9 @@ Deployed Website (on Heroku)
 * React, Bootstrap For Frontend Server
 * Django Rest FrameWork For Backend Server
 * Celery For Running Async Tasks On backend Server 
-* Azure Face Detection Api for Facedetection 
-* Azure Face Verifiaction Api for Face verification
-* Mapbox For embedding Maps
+* Azure Face Detection Api for Facedetection (https://docs.microsoft.com/en-us/rest/api/faceapi/face/detect-with-stream)
+* Azure Face Verifiaction Api for Face verification (https://docs.microsoft.com/en-us/rest/api/faceapi/face/verify-face-to-face)
+* Mapbox For embedding Maps (https://www.mapbox.com/)
 * gecoding and reverse geocoding for Api's for fecthing Location from coordinate
 * Auto Suggest Mapbox Api for Loaction Search Bar
 * Smtp For Email Notifiaction From Backend Server(Django Rest Framework)
@@ -107,7 +106,6 @@ Pre-Requisites: You must have Nodejs installed locally on your system
 * Port must be 8000 because in frontend side it is linked with port 8000 
 * Now Django server is running on local server 
 * Now Run Celery Server which support Async Request Handling to Run celery Server
-* First install RabbitMQ on your loacl system to support as an messege Broker For Celery [Steps to install rabbitmq-https://www.rabbitmq.com/download.html]
 * Run `celery -A eng_backend worker --pool=solo -l info` From the root directory of App 
 * After Both Servers Started running Backend starts giving Response to all Api Request.                                        
 > ## Improvements
@@ -130,7 +128,9 @@ so This is a site of imporvement in my project.
 ![Fuzzy Search](public/images/Fuzzysearch.png)
 *  Map Features
 ![EMAIL NOTIFICATION](public/images/mapboxmap.png)
-### Showing Match in MY complain section
-![Match](public/images/Match.png)
+* Email Notification
+![EMAILNOTIFICATIN](public/images/emial.png)
+
+
 
 
