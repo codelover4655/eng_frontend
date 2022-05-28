@@ -15,12 +15,12 @@ user that they got a match.
 > #### List of Features it currently Supports includes : 
 
 * Matching Missing Person Profile To Found Person Profile via Face Recognization Azure Api 
-* Email Notificaton when got A match 
+* Email Notificaton when got a match 
 *  Async Task Sechdulding via Celery on Backend Server For Better Performance and Less Waiting Time
 *  Fuzzy Search For Searching in List of Profiles for Better Filtering 
 * 👤 User Authenticaion 
 * Authentication also Supports Google Login
-* 
+ 
 
 > ## Documentation
 - [Presentation](https://docs.google.com/presentation/d/1z6csQ5YHbrYu9RsSbmHp7JdDms3Ntkd4fReq6RBJtD0/edit?usp=sharing)
@@ -40,9 +40,9 @@ user that they got a match.
 [![Website https://readymeet.herokuapp.com](https://img.shields.io/website-up-down-green-red/https/naereen.github.io.svg)](https://readymeet.herokuapp.com)
 
 Deployed Website (on Heroku): https://readymeet.herokuapp.com/
-* Frontend Server is deployed to Netlify
+* Frontend Server is Deployed to Netlify
 * Backend Server is Deployed to Heroku 
-* PostGres Databse on Heroku
+* PostGres Database on Heroku
 * Celery On Heroku
 * Media Files On cloudinary (https://cloudinary.com/)
 * To Run Project only need to Run Frontend () Backend Is already attched to it
@@ -68,7 +68,7 @@ Deployed Website (on Heroku): https://readymeet.herokuapp.com/
 * This web-application has varying permmisions for Visiting Diffrent Section of Website
 * To see Home-Page Section , Missing People List Section , Found People List Section ANd Visting  Any Full Profie Card User Dont need to Sign-in/Sign-up
  On this Website These Sections Are Open To All .
-* For Filing any complain of Missing Or Found You Need to Login/Register in Web-Application as an User.Qucik Login is aviliable via Google Login.
+* For Filing any complain of Missing Or Found You Need to Login/Register in Web-Application as an User.Quick Login is available via Google Login.
 * In Missing People List Section You can find every Missing Complain Which is Registered On my Application And Not Yet Taken Back. So Here You See 
  Some Profie Card Which Has a Full detials Button Which when clicked Will Show You The Full Profie Regarding that card. The Found People List section is also designed in the same way.
 * On Missing People List Section and Found People List you also get an Search bar where you can search profile via Name or father Name or Mother Name or Age. This is a Fuzzy Search so No need to be very confident with your spellings  .
@@ -93,7 +93,7 @@ two buttons for every profie first is "CHECK STATUS" button where you can see wh
 Pre-Requisites: You must have Nodejs installed locally on your system
 * Clone the Repository `git clone https://github.com/codelover4655/eng_frontend.git` or directly download the zip file.
 * Move to the directry where this cloned file exist(if cloned in C folder directly so run commed in cmd `cd eng_frontend`)
-* Intall the Dependencies `npm install`
+* Install the Dependencies `npm install`
 * Starting the App `npm start` or `node server.js`
 * Open `http://localhost:3000/` to view the App
 * be ensure this port is free for host
