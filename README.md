@@ -109,6 +109,7 @@ Pre-Requisites: You must have Nodejs installed locally on your system
 * Port must be 8000 because in frontend side it is linked with port 8000 
 * Now Django server is running on local server 
 * Now Run Celery Server which support Async Request Handling to Run celery Server
+* First install RabbitMQ on your loacl system to support as an messege Broker For Celery [Steps to install rabbitmq-https://www.rabbitmq.com/download.html]
 * Run `celery -A eng_backend worker --pool=solo -l info` From the root directory of App 
 * After Both Servers Started running Backend starts giving Response to all Api Request.                                        
 > ## Improvements
