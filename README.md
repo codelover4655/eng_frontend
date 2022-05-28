@@ -130,7 +130,7 @@ so This is a site of imporvement in my project.
 *  Map Features
 ![EMAIL NOTIFICATION](public/images/mapboxmap.png)
 * Email Notification
-![EMAILNOTIFICATIN](public/images/email.png)
+![EMAILNOTIFICATIN](public/images/emial.png)
 
 
 
