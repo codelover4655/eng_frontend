@@ -36,9 +36,8 @@ user that they got a match.
 
 > ## Deployment 
 
-[![Website https://readymeet.herokuapp.com](https://img.shields.io/website-up-down-green-red/https/naereen.github.io.svg)](https://readymeet.herokuapp.com)
 
-Deployed Website (on Heroku): https://readymeet.herokuapp.com/
+Deployed Website (on Heroku)
 * Frontend Server is Deployed to Netlify
 * Backend Server is Deployed to Heroku 
 * PostGres Database on Heroku
