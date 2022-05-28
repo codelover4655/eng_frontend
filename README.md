@@ -111,13 +111,12 @@ Pre-Requisites: You must have Nodejs installed locally on your system
 * After Both Servers Started running Backend starts giving Response to all Api Request.                                        
 > ## Improvements
 
-* The Project has various rooms for improvements from scaling Application to adding new Features like Users are able to chat before as well after Meetings, able to create teams and add Participants, share resources. 
-* __Biggest Issue that I found was send email invitation from Client Side has Token ID visible to world which is prone to Vulnerabilities, issue can be solved by using server side email invitation sending.__
-* Currently the Website is not Scaled due to which there is latency in loading and API Calls. During meeting if any user leaves the meeting, his meeting Window closes after few sec due to latency in API calls. 
-* Also, the User is able to record only his video not entire meeting. In future User can record the entire meeting. 
-* Also, the User Count is having some bugs, it decreases to -1 on page refresh or shows wrong output when multiple users enters/leaves meeting which needs to be fixed. 
+* The Project has various rooms for improvements from scaling Application to adding new Features like As of Now i reduced the waiting time of user by 
+using Async Task sechdulding like When User Files a missing complian i Run a Async task in backend to Search Whole database Foe similer Faces and 
+send a Email notification when Found a match by this user may not have to wait for conformation but searching whole database is a time consuming task 
+so This is a site of imporvement in my project.
 
-😃 Suggestions and Contibutions are Welcomed! Feel free to Reach out to me! **[Pranshu Kashyap](https://github.com/pranshukas)**
+😃 Suggestions and Contibutions are Welcomed! Feel free to Reach out to me! **[Tushar Singhal](https://github.com/codelover4655)**
 
 > ## License
 MIT License
