@@ -42,6 +42,7 @@ Deployed Website :( https://629392f60b696659d6578353--missingpeople.netlify.app)
 * PostGres Database on Heroku
 * Celery On Heroku
 * Media Files On cloudinary (https://cloudinary.com/)
+* short video demostration to install this project on local setup https://drive.google.com/file/d/15bpbQhZyF_zKradEX_FgcIYMUFXR5KAA/view?usp=sharing
 * To Run Project only need to Run Frontend () Backend Is already attched to it
 
 > ## Tools and Technologies Used
@@ -82,8 +83,8 @@ two buttons for every profie first is "CHECK STATUS" button where you can see wh
  * Both The User involved in match got mail from website-email(missingperson4655@gmail.com) There they got link of Profile Of whom They Got Match
  * As well as in my complain section they can check status where they can se those matching profiles
  
-> ## Local Setup (short video demostration to install this project on local setup https://drive.google.com/file/d/15bpbQhZyF_zKradEX_FgcIYMUFXR5KAA/view?usp=sharing)
-> *                                      First Setup Backend such that when you start frontend it give full functionality.
+> ## Local Setup 
+> *                 First Setup Backend such that when you start frontend it give full functionality.
 * For Running this application with full funtionality On your Local Pc You to setup both backend-server(https://github.com/codelover4655/eng_backend)
    and frontend-server(https://github.com/codelover4655/eng_frontend)
  *                                         STEPS TO SETUP FRONTEND SERVER
