@@ -175,7 +175,7 @@ else
       var List=list.map(element=>{
         return(  
          
-            <Profilecard obj={element} type="Missing"/>
+            <Profilecard obj={element} type="MISSING"/>
         );
 
     });

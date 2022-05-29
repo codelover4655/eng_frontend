@@ -15,7 +15,7 @@ class Profilecard extends React.Component  {
   async  fulldetails()
     { 
         
-    if(this.props.type=="Missing")
+    if(this.props.type=="MISSING")
     {
       window.location=`/Profile_Missing_Verdict/${this.props.obj.id}`  }
     else {
