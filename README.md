@@ -36,7 +36,7 @@ Find Missing People is a web application that helps simplify the issue of locati
 > ## Deployment 
 
 
-Deployed Website :( https://629392f60b696659d6578353--missingpeople.netlify.app/Foundcomplain)
+Deployed Website :( https://629392f60b696659d6578353--missingpeople.netlify.app)
 * Frontend Server is Deployed to Netlify
 * Backend Server is Deployed to Heroku (https://proper-backend1.herokuapp.com)
 * PostGres Database on Heroku
