@@ -96,7 +96,9 @@ Pre-Requisites: You must have Nodejs installed locally on your system
 * be ensure this port is free for host
 
                                                 STEPS TO SETUP BACKEND SERVER
-* Clone the Repository `https://github.com/codelover4655/eng_backend.git` or directly download the zip file.                                            
+  
+* Clone the Repository `https://github.com/codelover4655/eng_backend.git` or directly download the zip file.
+* install python on your pc if not present previously                                            
 * Install virtual enviourment for python as there may be some dependencies which OS not give access to install on system directly
 * Process to install and create virtual envirment varies for diffrent operterating systems (supporting docs-https://docs.python.org/3/library/venv.html)      
 * after activating virtual environment (if required)
@@ -106,6 +108,7 @@ Pre-Requisites: You must have Nodejs installed locally on your system
 * Port must be 8000 because in frontend side it is linked with port 8000 
 * Now Django server is running on local server 
 * Now Run Celery Server which support Async Request Handling to Run celery Server
+* First install rabbitmq on your pc which servers as broker for celery(https://www.rabbitmq.com/download.html)
 * Run `celery -A eng_backend worker --pool=solo -l info` From the root directory of App 
 * After Both Servers Started running Backend starts giving Response to all Api Request.                                        
 > ## Improvements
