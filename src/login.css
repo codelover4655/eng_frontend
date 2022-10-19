@@ -1,5 +1,5 @@
 body {
-    background: #222D32;
+    background: rgba(34, 45, 50, 1);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,7 +13,7 @@ body {
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #000;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -94,7 +94,7 @@ body {
   color: #EF3B3A;
 }
 body {
-    background: #222D32;
+    background: rgba(34, 45, 50, 1);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
